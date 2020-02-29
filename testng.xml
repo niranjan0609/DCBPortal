@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Enrollment test suite" verbose="1" >
+
+ <listeners>
+       <listener class-name="com.ienroll.base.TestListener"/>
+  </listeners>
+	
+<test name="Chrome Tests">
+<parameter name="browserType" value="chrome" />
+	<parameter name="appURL" value="http://dev.isbsindia.in/ienroll_iirm/Stage" />
+		<classes>
+		 		    <class name="com.ienroll.tests.DCB" />
+			
+		</classes>
+	</test>
+
+</suite>
